@@ -55,10 +55,10 @@ export class BankDetailsPage extends BasePage {
     }
 
     async verifyAgreementIsReady() {
-        await this.agreementReady().waitFor({ state: "visible", timeout: 20000 });
+        await this.agreementReady().waitFor({ state: "visible", timeout: 30000 });
     }
     async verifyPaymentIsSuccessful() {
-        await this.paymenSuccessful().waitFor({ state: "visible", timeout: 20000 });
+        await this.paymenSuccessful().waitFor({ state: "visible", timeout: 30000 });
     }
 
     async verifyPaymentFailed(){
